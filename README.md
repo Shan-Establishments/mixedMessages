@@ -1,12 +1,40 @@
-# Mixed Messages
-This is the first project that I completed independently.
-## How did I do it?
-### Planning
-+ The context of the game, what do I want it be be based on. 
-+ The type of messages I wanted it to include.
-+ How I could structure my code based on the type of game it was.
-### Creating the message
-The messages that are conducted in the code are randomly generated to interpret the users characteristics. This includes their favourite colour, their personality and 
-their hobbies. It is a very simple game but it is a bit fun and interesting for the user to find different things about themselves.
+# Mixed Messages :speech_balloon:
 
-I made sure to include the code on github, if anyone would like to see :).
+This is the first project that I completed independently. Mixed Messages is a message generator program that is solely based on the programming language Javascript. 
+
+### What does Mixed Messages do? :thought_balloon:
+Mixed Messages generates a randomised message based on the users favourite colour, personality and their hobbies.
+
+### Why did I create this project? :thought_balloon:
+I created this project because I thought this would be entertaining, a user could generate different characteristics plus they are able to stop at any time. There are mo limits with this.
+
+### Code
+This is my code so far, you can view it clearly on my README.md. Any updates will be shown on here aswell.
+
+#### My code:
+```
+let favColour = ["red", "blue", "yellow", "green"];
+let personality = [
+  "You are independent",
+  "You are kind",
+  "You are courageous",
+  "You are intelligent",
+];
+
+let hobbies = [
+  "You like playing games",
+  "You like to read",
+  "You like to draw",
+  "You like to listen to music",
+];
+
+function characteristics(sentence) {
+  sentence = Math.floor(Math.random() * 4);
+}
+
+let f = characteristics(favColour);
+let p = characteristics(personality);
+let h = characteristics(hobbies);
+
+console.log(`Your favourite colour is ${f}. ${p}. ${h}.`);
+```
